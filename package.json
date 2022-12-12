@@ -65,8 +65,8 @@
   "c8y": {
     "application": {
       "name": "Cumulocity Device Details Widget Plugin",
-      "contextPath": "cumulocity-device-details-widget-plugin",
-      "key": "cumulocity-device-details-widget-plugin-application-key",
+      "contextPath": "device-details-runtime-widget",
+      "key": "device-details-runtime-widget-application-key",
       "globalTitle": "Cumulocity Device Details Widget with Module Federation",
       "tabsHorizontal": true,
       "isPackage": true,
