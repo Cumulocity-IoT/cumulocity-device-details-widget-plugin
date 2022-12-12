@@ -1,10 +1,10 @@
 {
   "name": "cumulocity-device-details-widget-plugin",
-  "version": "1.0.0",
+  "version": "1.0.0-beta",
   "description": "This is the Cumulocity module federation plugin. Plugins can be developed like any Cumulocity application, but can be used at runtime by other applications. Therefore, they export an Angular module which can then be imported by any other application. The exports are defined in `package.json`:",
   "scripts": {
     "start": "c8ycli server --env.beta=true",
-    "build": "c8ycli build",
+    "build": "c8ycli build --env.mode=production",
     "deploy": "c8ycli deploy",
     "postinstall": "ngcc",
     "prebuild": " gulp clean",
@@ -72,7 +72,7 @@
       "isPackage": true,
       "noAppSwitcher": true,
       "package": "plugin",
-      "requiredPlatformVersion": ">=1014.0.0",
+      "requiredPlatformVersion": ">=1016.0.0",
       "exports": [
         {
           "name": "Cumulocity Device Details Widget Plugin",
