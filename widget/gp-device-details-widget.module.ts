@@ -47,7 +47,7 @@ import { TypeaheadModule } from 'ngx-bootstrap/typeahead';
       provide: HOOK_COMPONENTS,
       multi: true,
       useValue: {
-        id: 'cumulocity-device-details-widget-plugin',
+        id: 'device.details.mat.dashboard',
         previewImage: preview.previewImage,
         label: 'Device Details',
         description: 'Device details Dashboard - Display device details in the dashboard',
