@@ -1,0 +1,1 @@
+# cumulocity-device-details-widget-plugin
