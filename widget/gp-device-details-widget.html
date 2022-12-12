@@ -1,0 +1,19 @@
+<div class="card">
+  <div>
+    <div class="card-content">
+      <div class="card-content-item">
+        <div *ngFor="let col of config.propList">
+          <span class="text-truncate"><small class="text-muted">{{col.label}} : </small></span>
+        </div>
+      </div>
+      <div *ngIf="this.deviceDetails">
+        <div class="card-content-item card-text-value">
+          <div *ngFor="let col of config.propList">
+            <span style="overflow:visible;" title="{{this.deviceDetails[col.value]}}"><small
+                class="text-muted">{{this.deviceDetails[col.value]}}</small></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
