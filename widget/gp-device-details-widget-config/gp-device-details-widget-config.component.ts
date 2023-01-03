@@ -89,7 +89,9 @@ export class GpDeviceDetailsWidgetConfigComponent implements OnInit {
 
   async getDeviceData() {
     if (this.config.deviceDetailsUrl && this.config.mainListName) {
-      (await this.deviceDetailsService.getDeviceDataByID(this.config)).subscribe((data) => {
+      this.deviceDetailsService.getDeviceDataByID(this.config)
+      .then((response) => response.json())
+      .then((data) => {
         this.extractKeysFromObject(data[this.config.mainListName]);
       });
       //this.propertiesToDisplay = [];

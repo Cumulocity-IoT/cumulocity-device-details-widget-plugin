@@ -19,8 +19,6 @@ import { NgModule } from '@angular/core';
 import { HOOK_COMPONENTS, CoreModule } from '@c8y/ngx-components';
 import * as preview from './preview-image'
 import { GpDeviceDetailsWidgetComponent } from './gp-device-details-widget.component';
-import { HttpClientModule, HttpClient, } from '@angular/common/http';
-import { GpDeviceDetailsWidgetService } from './gp-device-details-widget.service';
 import { DatePipe } from '@angular/common';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { GpDeviceDetailsWidgetConfigComponent } from './gp-device-details-widget-config/gp-device-details-widget-config.component';
@@ -32,7 +30,6 @@ import { TypeaheadModule } from 'ngx-bootstrap/typeahead';
   declarations: [GpDeviceDetailsWidgetComponent, GpDeviceDetailsWidgetConfigComponent],
   imports: [
     CoreModule,
-    HttpClientModule,
     NgSelectModule,
     MatAutocompleteModule,
     TypeaheadModule
@@ -40,9 +37,7 @@ import { TypeaheadModule } from 'ngx-bootstrap/typeahead';
   exports: [GpDeviceDetailsWidgetComponent, GpDeviceDetailsWidgetConfigComponent],
   entryComponents: [GpDeviceDetailsWidgetComponent, GpDeviceDetailsWidgetConfigComponent],
   providers: [
-    HttpClient,
     DatePipe,
-    GpDeviceDetailsWidgetService,
     {
       provide: HOOK_COMPONENTS,
       multi: true,

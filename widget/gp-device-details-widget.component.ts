@@ -17,9 +17,6 @@
 */
 import { Component, OnInit, Input } from '@angular/core';
 import { GpDeviceDetailsWidgetService } from './gp-device-details-widget.service';
-import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
-import { DatePipe } from '@angular/common';
 import { InventoryService, IdentityService } from '@c8y/client';
 @Component({
   selector: 'lib-gp-device-details-widget',
@@ -36,8 +33,7 @@ export class GpDeviceDetailsWidgetComponent implements OnInit {
   deviceDataColumnvalues: [];
   columns: [];
   mainList: any;
-  constructor(private http: HttpClient,
-    private datePipe: DatePipe,
+  constructor(
     private device: GpDeviceDetailsWidgetService,
     public inventory: InventoryService,
     public identity: IdentityService,
@@ -60,7 +56,9 @@ export class GpDeviceDetailsWidgetComponent implements OnInit {
     this.deviceExtId = await this.device.getDeviceData(this.config);
     this.URL = this.config.deviceDetailsUrl;
     this.deviceUrl = this.URL + this.deviceExtId;
-    this.getDeviceDetails().subscribe((devData) => {
+    this.getDeviceDetails()
+    .then((response) => response.json())
+    .then((devData) => {
       if (devData[this.mainList][0]) {
         this.deviceDetails = devData[this.mainList][0];
         this.extractKeyValuesFromObject();
@@ -77,8 +75,8 @@ export class GpDeviceDetailsWidgetComponent implements OnInit {
        this.deviceDataColumnvalues = this.config.tableColumnValues.split(',');*/
     }
   }
-  getDeviceDetails(): Observable<any> {
-    return this.http.get(this.deviceUrl);
+  getDeviceDetails() {
+    return fetch(this.deviceUrl);
   }
 
   async extractKeyValuesFromObject() {
