@@ -69,10 +69,6 @@ export class GpDeviceDetailsWidgetComponent implements OnInit {
     });
     if (this.config) {
       this.mainList = this.config.mainListName;
-      /* this.deviceDataColumnName = this.config.tableColumnNames.split(',');
-       // tslint:disable-next-line: no-unused-expression
-       (this.deviceDataColumnName);
-       this.deviceDataColumnvalues = this.config.tableColumnValues.split(',');*/
     }
   }
   getDeviceDetails() {

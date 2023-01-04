@@ -17,7 +17,6 @@
 */
 import { Injectable } from '@angular/core';
 import { InventoryService, IdentityService, IResultList, IManagedObject } from '@c8y/client';
-import { HttpClient } from '@angular/common/http';
 
 @Injectable({providedIn: "root"})
 export class GpDeviceDetailsWidgetService {
@@ -63,7 +62,6 @@ export class GpDeviceDetailsWidgetService {
   }
   async getDeviceData(config) {
     const inventory = await this.inventory.detail(config.device.id);
-    //const inventory = await this.inventory.detail('00010238');
     this.response = inventory.data;
     if ((this.response.hasOwnProperty('c8y_IsDevice')) || (this.response.hasOwnProperty('c8y_IsAsset'))) {
       this.deviceExternalId = await this.getExternalId(config.device.id);
@@ -92,9 +90,8 @@ export class GpDeviceDetailsWidgetService {
   }
 
   async getDeviceDataByID(config) {
-   // let deviceExternalID = await this.getExternalIdForDevice(config);
-    let deviceDetailsURL = config.deviceDetailsUrl + '00001246';
-   // return this.http.get(deviceDetailsURL);
+   let deviceExternalID = await this.getExternalIdForDevice(config);
+    let deviceDetailsURL = config.deviceDetailsUrl + deviceExternalID;
     return fetch(deviceDetailsURL);
   }
 }

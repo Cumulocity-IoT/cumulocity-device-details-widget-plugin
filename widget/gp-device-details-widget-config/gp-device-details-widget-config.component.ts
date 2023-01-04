@@ -18,7 +18,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Observable } from 'rxjs';
 import { GpDeviceDetailsWidgetService } from '../gp-device-details-widget.service';
-import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 @Component({
   selector: 'lib-gp-device-details-widget-config',
   templateUrl: './gp-device-details-widget-config.component.html',
@@ -27,11 +26,6 @@ import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 
 export class GpDeviceDetailsWidgetConfigComponent implements OnInit {
   @Input() config: any = {};
-  
-  // stateCtrl = new UntypedFormControl();
-  // myForm = new UntypedFormGroup({
-  //   state: this.stateCtrl
-  // });
   propertiesToDisplay: any[] = [];
 
   constructor(private deviceDetailsService: GpDeviceDetailsWidgetService) { }
@@ -75,14 +69,20 @@ export class GpDeviceDetailsWidgetConfigComponent implements OnInit {
     "uomTypeId": "UOM-003",
     "uomTypeDes": "Each"
   }
+  configDevice = null;
 
   ngOnInit() {
-    // this.toDotNotation(this.deviceDetail);
-    // this.extractKeysFromObject(this.deviceDetail);
     if (!this.config.propList) {
       this.config.propList = [{ label: '', value: '' }];
     }
     if (this.config.device && this.config.deviceDetailsUrl && this.config.mainListName) {
+      this.getDeviceData();
+    }
+  }
+
+  ngDoCheck(): void {
+    if(this.config.device && this.config.device.id !== this.configDevice){
+      this.configDevice = this.config.device.id;
       this.getDeviceData();
     }
   }
@@ -94,7 +94,6 @@ export class GpDeviceDetailsWidgetConfigComponent implements OnInit {
       .then((data) => {
         this.extractKeysFromObject(data[this.config.mainListName]);
       });
-      //this.propertiesToDisplay = [];
     }
   }
 

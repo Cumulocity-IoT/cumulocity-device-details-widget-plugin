@@ -1,7 +1,7 @@
 {
   "name": "cumulocity-device-details-widget-plugin",
   "version": "1.0.0-beta",
-  "description": "This is the Cumulocity module federation plugin. Plugins can be developed like any Cumulocity application, but can be used at runtime by other applications. Therefore, they export an Angular module which can then be imported by any other application. The exports are defined in `package.json`:",
+  "description": "This is the Cumulocity module federation plugin. This Plugins is designed to display the Device Details can fetch the details from the Api call and can display data according to the fields provided. The angular widget has the ability to summarize information relating to the names from the Api call.",
   "scripts": {
     "start": "c8ycli server --env.beta=true",
     "build": "c8ycli build --env.mode=production",
@@ -78,7 +78,7 @@
           "name": "Cumulocity Device Details Widget Plugin",
           "module": "GpDeviceDetailsWidgetModule",
           "path": "./widget/gp-device-details-widget.module.ts",
-          "description": "Adds a custom widget to the shell application"
+          "description": "This Plugins is designed to display the Device Details can fetch the details from the Api call and can display data according to the fields provided. The angular widget has the ability to summarize information relating to the names from the Api call."
         }
       ],
       "remotes": {

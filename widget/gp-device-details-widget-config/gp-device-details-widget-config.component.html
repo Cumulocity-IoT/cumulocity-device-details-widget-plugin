@@ -29,20 +29,6 @@
       <select [(ngModel)]="property.value" style="margin-left:10px; width: 75%; height: auto;">
         <option *ngFor="let key of propertiesToDisplay" [ngValue]="key">{{key}}</option>
       </select> 
-
-      <!-- <ng-select placeholder="Select Property"
-        [(ngModel)]="property.value" style="margin-left:10px; width: 75%; height: auto;">
-        <ng-option *ngFor="let key of propertiesToDisplay" [value]="key">{{key}}</ng-option>
-      </ng-select> -->
-
-        <!-- <form [formGroup]="myForm"  style="margin-left:10px; height: 33px;">
-          <input 
-                 formControlName="property.value" style="width: 100%;"
-                 [typeahead]="propertiesToDisplay"
-                 [typeaheadMinLength]="0"
-                 class="form-control">
-        </form> -->
-
  
    </div>
    
@@ -53,13 +39,4 @@
       </button>
     </div>
   </div>
-  <!-- <div class="form-group">
-      <label translate>Enter the Row values (comma separated e.g: ID,)</label>
-      <input type="text" name="config.tableColumnNames" style="width:100%" [(ngModel)]="config.tableColumnNames">
-    </div>
-
-    <div class="form-froup">
-      <label translate>Enter the Row Names from API (comma separated e.g: id,)</label>
-      <input type="text" name="config.tableColumnValues" style="width:100%" [(ngModel)]="config.tableColumnValues">
-    </div> -->
 </div>
