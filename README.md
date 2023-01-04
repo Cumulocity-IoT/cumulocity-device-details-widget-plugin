@@ -4,7 +4,7 @@ This Device Details Widget Plugin is the Cumulocity module federation plugin cre
 
 ### Please note that this plugin is in currently under BETA mode.
 
-### Please choose Demo Widget release based on Cumulocity/Application builder version:
+### Please choose Device Details Widget Plugin release based on Cumulocity/Application builder version:
 
 |APPLICATION BUILDER | CUMULOCITY  | DEVICE DETAILS WIDGET PLUGIN  |
 |--------------------|-------------|-------------------------------|
