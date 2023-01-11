@@ -16,7 +16,6 @@
 * limitations under the License.
 */
 import { Component, OnInit, Input } from '@angular/core';
-import { Observable } from 'rxjs';
 import { GpDeviceDetailsWidgetService } from '../gp-device-details-widget.service';
 @Component({
   selector: 'lib-gp-device-details-widget-config',
