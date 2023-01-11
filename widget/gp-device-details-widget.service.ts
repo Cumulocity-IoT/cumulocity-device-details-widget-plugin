@@ -18,13 +18,12 @@
 import { Injectable } from '@angular/core';
 import { InventoryService, IdentityService, IResultList, IManagedObject } from '@c8y/client';
 
-@Injectable({providedIn: "root"})
+@Injectable({ providedIn: "root" })
 export class GpDeviceDetailsWidgetService {
   restItems: any;
   constructor(public inventory: InventoryService,
     public identity: IdentityService) {
-      console.log('in config GpDeviceDetailsWidgetService constructor');
-     }
+  }
   response: any;
   deviceExternalId: any;
 
@@ -90,7 +89,7 @@ export class GpDeviceDetailsWidgetService {
   }
 
   async getDeviceDataByID(config) {
-   let deviceExternalID = await this.getExternalIdForDevice(config);
+    let deviceExternalID = await this.getExternalIdForDevice(config);
     let deviceDetailsURL = config.deviceDetailsUrl + deviceExternalID;
     return fetch(deviceDetailsURL);
   }

@@ -22,17 +22,12 @@ import { GpDeviceDetailsWidgetComponent } from './gp-device-details-widget.compo
 import { DatePipe } from '@angular/common';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { GpDeviceDetailsWidgetConfigComponent } from './gp-device-details-widget-config/gp-device-details-widget-config.component';
-import {MatAutocompleteModule} from '@angular/material/autocomplete';
-import { TypeaheadModule } from 'ngx-bootstrap/typeahead';
-
 
 @NgModule({
   declarations: [GpDeviceDetailsWidgetComponent, GpDeviceDetailsWidgetConfigComponent],
   imports: [
     CoreModule,
-    NgSelectModule,
-    MatAutocompleteModule,
-    TypeaheadModule
+    NgSelectModule
   ],
   exports: [GpDeviceDetailsWidgetComponent, GpDeviceDetailsWidgetConfigComponent],
   entryComponents: [GpDeviceDetailsWidgetComponent, GpDeviceDetailsWidgetConfigComponent],

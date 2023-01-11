@@ -16,4 +16,4 @@ import { GpDeviceDetailsWidgetModule } from './widget/gp-device-details-widget.m
   providers: [BsModalRef],
   bootstrap: [BootstrapComponent]
 })
-export class AppModule {}
+export class AppModule { }

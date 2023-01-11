@@ -25,9 +25,9 @@ describe('GpDeviceDetailsWidgetComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GpDeviceDetailsWidgetComponent ]
+      declarations: [GpDeviceDetailsWidgetComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

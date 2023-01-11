@@ -1,7 +1,7 @@
 {
   "name": "cumulocity-device-details-widget-plugin",
   "version": "1.0.0-beta",
-  "description": "This is the Cumulocity module federation plugin. This Plugins is designed to display the Device Details can fetch the details from the Api call and can display data according to the fields provided. The angular widget has the ability to summarize information relating to the names from the Api call.",
+  "description": "The Device Details Widget is designed to display the details of the device. It fetches the details from the API call and displays the data according to the fields provided. The plugin has the ability to summarize information relating to the names from the API call.",
   "scripts": {
     "start": "c8ycli server --env.beta=true",
     "build": "c8ycli build --env.mode=production",
@@ -25,7 +25,6 @@
     "@angular/router": "14.0.6",
     "@angular/upgrade": "14.0.6",
     "@c8y/client": "1016.0.39",
-    "@c8y/ng1-modules": "1011.0.12",
     "@c8y/ngx-components": "1016.0.39",
     "@c8y/style": "1016.0.39",
     "@ng-select/ng-select": "^9.0.1",
@@ -33,10 +32,6 @@
     "del": "^5.1.0",
     "fs-extra": "^9.1.0",
     "gulp": "^4.0.2",
-    "gulp-filter": "^6.0.0",
-    "gulp-inject-css": "^3.0.0",
-    "gulp-inject-string": "^1.1.2",
-    "gulp-replace": "^1.0.0",
     "gulp-zip": "^5.0.1",
     "i": "^0.3.6",
     "ngx-bootstrap": "^9.0.0",
@@ -46,7 +41,6 @@
   "devDependencies": {
     "@angular-devkit/build-angular": "14.0.6",
     "@angular/cdk": "14.1.2",
-    "@angular-devkit/build-ng-packagr": "~0.803.28",
     "@angular/compiler-cli": "14.0.6",
     "@angular/language-service": "14.0.6",
     "@angular/service-worker": "14.0.6",
@@ -59,15 +53,15 @@
     "typescript": "4.7.4",
     "style-loader": "3.3.1",
     "html-loader": "4.1.0",
-    "@c8y/cli": "1016.0.39",
-    "ng-packagr": "^11.0.6"
+    "@c8y/cli": "1016.0.39"
   },
   "c8y": {
     "application": {
       "name": "Cumulocity Device Details Widget Plugin",
+      "description": "The Device Details Widget is designed to display the details of the device. It fetches the details from the API call and displays the data according to the fields provided. The plugin has the ability to summarize information relating to the names from the API call.",
       "contextPath": "device-details-runtime-widget",
       "key": "device-details-runtime-widget-application-key",
-      "globalTitle": "Cumulocity Device Details Widget with Module Federation",
+      "globalTitle": "The Device Details Widget is designed to display the details of the device. It fetches the details from the API call and displays the data according to the fields provided. The plugin has the ability to summarize information relating to the names from the API call.",
       "tabsHorizontal": true,
       "isPackage": true,
       "noAppSwitcher": true,
@@ -78,7 +72,7 @@
           "name": "Cumulocity Device Details Widget Plugin",
           "module": "GpDeviceDetailsWidgetModule",
           "path": "./widget/gp-device-details-widget.module.ts",
-          "description": "This Plugins is designed to display the Device Details can fetch the details from the Api call and can display data according to the fields provided. The angular widget has the ability to summarize information relating to the names from the Api call."
+          "description": "The Device Details Widget is designed to display the details of the device. It fetches the details from the API call and displays the data according to the fields provided. The plugin has the ability to summarize information relating to the names from the API call."
         }
       ],
       "remotes": {

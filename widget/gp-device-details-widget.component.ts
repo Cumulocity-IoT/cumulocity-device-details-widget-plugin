@@ -57,16 +57,16 @@ export class GpDeviceDetailsWidgetComponent implements OnInit {
     this.URL = this.config.deviceDetailsUrl;
     this.deviceUrl = this.URL + this.deviceExtId;
     this.getDeviceDetails()
-    .then((response) => response.json())
-    .then((devData) => {
-      if (devData[this.mainList][0]) {
-        this.deviceDetails = devData[this.mainList][0];
-        this.extractKeyValuesFromObject();
-      } else {
-        this.deviceDetails = devData[this.mainList];
-        this.extractKeyValuesFromObject();
-      }
-    });
+      .then((response) => response.json())
+      .then((devData) => {
+        if (devData[this.mainList][0]) {
+          this.deviceDetails = devData[this.mainList][0];
+          this.extractKeyValuesFromObject();
+        } else {
+          this.deviceDetails = devData[this.mainList];
+          this.extractKeyValuesFromObject();
+        }
+      });
     if (this.config) {
       this.mainList = this.config.mainListName;
     }

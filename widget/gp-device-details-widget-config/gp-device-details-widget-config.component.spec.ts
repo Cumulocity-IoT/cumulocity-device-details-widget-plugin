@@ -24,9 +24,9 @@ describe('GpDeviceDetailsWidgetConfigComponent', () => {
   let fixture: ComponentFixture<GpDeviceDetailsWidgetConfigComponent>;
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GpDeviceDetailsWidgetConfigComponent ]
+      declarations: [GpDeviceDetailsWidgetConfigComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

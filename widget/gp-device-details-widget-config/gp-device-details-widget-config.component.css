@@ -1,13 +1,13 @@
 .btn-danger-custom {
-    color: #e0000e;
-    background-color: #fff;
-    border-color: #e0000e;
+  color: #e0000e;
+  background-color: #fff;
+  border-color: #e0000e;
 }
 
 ::ng-deep .dropdown-menu {
-    min-width: 62% !important;
-  }
-  
-  ::ng-deep typeahead-container {
-    width: 100% !important;
-  }
+  min-width: 62% !important;
+}
+
+::ng-deep typeahead-container {
+  width: 100% !important;
+}

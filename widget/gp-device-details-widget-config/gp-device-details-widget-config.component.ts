@@ -81,7 +81,7 @@ export class GpDeviceDetailsWidgetConfigComponent implements OnInit {
   }
 
   ngDoCheck(): void {
-    if(this.config.device && this.config.device.id !== this.configDevice){
+    if (this.config.device && this.config.device.id !== this.configDevice) {
       this.configDevice = this.config.device.id;
       this.getDeviceData();
     }
@@ -90,10 +90,10 @@ export class GpDeviceDetailsWidgetConfigComponent implements OnInit {
   async getDeviceData() {
     if (this.config.deviceDetailsUrl && this.config.mainListName) {
       this.deviceDetailsService.getDeviceDataByID(this.config)
-      .then((response) => response.json())
-      .then((data) => {
-        this.extractKeysFromObject(data[this.config.mainListName]);
-      });
+        .then((response) => response.json())
+        .then((data) => {
+          this.extractKeysFromObject(data[this.config.mainListName]);
+        });
     }
   }
 
