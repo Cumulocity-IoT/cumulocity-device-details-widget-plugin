@@ -1,14 +1,12 @@
-# Cumulocity Device Details Widget Plugin [<img width="35" src="https://user-images.githubusercontent.com/32765455/211497905-561e9197-18b9-43d5-a023-071d3635f4eb.png"/>](https://github.com/SoftwareAG/cumulocity-device-details-widget-plugin/releases/download/1.0.0-beta/device-details-runtime-widget-1.0.0-beta.zip)
+# Cumulocity Device Details Widget Plugin [<img width="35" src="https://user-images.githubusercontent.com/32765455/211497905-561e9197-18b9-43d5-a023-071d3635f4eb.png"/>](https://github.com/SoftwareAG/cumulocity-device-details-widget-plugin/releases/download/1.0.1/sag-ps-pkg-device-details-widget-1.0.1.zip)
 
-This Device Details Widget Plugin is the Cumulocity module federation plugin created using c8ycli. This plugin can be used in Application Builder or Cockpit. This Plugin is designed to display the Device Details. It fetches the details from the API call and displays the data according to the fields provided. The plugin has the ability to summarize  information relating to the names from the Api call.
-
-### Please note that this plugin is in currently under BETA mode.
+The Device Details Widget Plugin is the Cumulocity module federation plugin created using c8ycli. This plugin can be used in Application Builder or Cockpit. This Plugin is designed to display the Device Details. It fetches the details from the API call and displays the data according to the fields provided. The widget plugin has the ability to summarize  information relating to the names from the Api call.
 
 ### Please choose Device Details Widget Plugin release based on Cumulocity/Application builder version:
 
 |APPLICATION BUILDER | CUMULOCITY  | DEVICE DETAILS WIDGET PLUGIN  |
 |--------------------|-------------|-------------------------------|
-| 2.0.x(coming soon) | >= 1016.x.x | 1.x.x                         |  
+| 2.0.x              | >= 1016.x.x | 1.x.x                         |  
 
 
 ![Device_Details_1](https://user-images.githubusercontent.com/99970126/181510210-2e16463e-0c57-4048-b458-4253a1c913ec.PNG)
@@ -27,7 +25,7 @@ This Device Details Widget Plugin is the Cumulocity module federation plugin cre
 ## Installation
 ### Runtime Widget Deployment?
 
- * This plugin support runtime deployment. Download  [Runtime Binary](https://github.com/SoftwareAG/cumulocity-device-details-widget-plugin/releases/download/1.0.0-beta/device-details-runtime-widget-1.0.0-beta.zip)  and install via Administrations(Beta mode) --> Ecosystems --> Applications --> Packages.
+ * This plugin support runtime deployment. Download  [Runtime Binary](https://github.com/SoftwareAG/cumulocity-device-details-widget-plugin/releases/download/1.0.1/sag-ps-pkg-device-details-widget-1.0.1.zip)  and install via Administrations --> Ecosystems --> Applications --> Packages.
 
 ## QuickStart
 

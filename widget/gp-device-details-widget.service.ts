@@ -78,14 +78,18 @@ export class GpDeviceDetailsWidgetService {
     return this.restItems;
   }
   async getExternalIdForDevice(config) {
-    const inventory = await this.inventory.detail(config.device.id);
-    this.response = inventory.data;
-    if ((this.response.hasOwnProperty('c8y_IsDevice')) || (this.response.hasOwnProperty('c8y_IsAsset'))) {
-      this.deviceExternalId = await this.getExternalId(config.device.id);
+    if (config.device) {
+      const inventory = await this.inventory.detail(config.device.id);
+      this.response = inventory.data;
+      if ((this.response.hasOwnProperty('c8y_IsDevice')) || (this.response.hasOwnProperty('c8y_IsAsset'))) {
+        this.deviceExternalId = await this.getExternalId(config.device.id);
+      } else {
+        alert('Please select a device for this widget to fuction correctly');
+      }
+      return this.deviceExternalId;
     } else {
-      alert('Please select a device for this widget to fuction correctly');
+      return '';
     }
-    return this.deviceExternalId;
   }
 
   async getDeviceDataByID(config) {

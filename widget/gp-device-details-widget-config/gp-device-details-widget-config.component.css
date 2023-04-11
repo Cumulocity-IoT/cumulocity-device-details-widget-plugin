@@ -11,3 +11,10 @@
 ::ng-deep typeahead-container {
   width: 100% !important;
 }
+
+.horizontal-line {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f5f5f5;
+}

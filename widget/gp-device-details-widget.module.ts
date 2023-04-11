@@ -40,7 +40,7 @@ import { GpDeviceDetailsWidgetConfigComponent } from './gp-device-details-widget
         id: 'device.details.mat.dashboard',
         previewImage: preview.previewImage,
         label: 'Device Details',
-        description: 'Device details Dashboard - Display device details in the dashboard',
+        description: 'The Device Details Widget is designed to display the details of the device. It fetches the details from the API call and displays the data according to the fields provided. The widget has the ability to summarize information relating to the names from the API call.',
         component: GpDeviceDetailsWidgetComponent,
         configComponent: GpDeviceDetailsWidgetConfigComponent,
         data: {
