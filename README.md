@@ -1,4 +1,4 @@
-# Cumulocity Device Details Widget Plugin [<img width="35" src="https://user-images.githubusercontent.com/32765455/211497905-561e9197-18b9-43d5-a023-071d3635f4eb.png"/>](https://github.com/SoftwareAG/cumulocity-device-details-widget-plugin/releases/download/1.0.1/sag-ps-pkg-device-details-widget-1.0.1.zip)
+# Cumulocity Device Details Widget Plugin [<img width="35" src="https://user-images.githubusercontent.com/32765455/211497905-561e9197-18b9-43d5-a023-071d3635f4eb.png"/>](https://github.com/SoftwareAG/cumulocity-device-details-widget-plugin/releases/download/1.0.2/sag-ps-pkg-device-details-widget-1.0.2.zip)
 
 The Device Details Widget Plugin is the Cumulocity module federation plugin created using c8ycli. This plugin can be used in Application Builder or Cockpit. This Plugin is designed to display the Device Details. It fetches the details from the API call and displays the data according to the fields provided. The widget plugin has the ability to summarize  information relating to the names from the Api call.
 
@@ -9,9 +9,9 @@ The Device Details Widget Plugin is the Cumulocity module federation plugin crea
 | 2.0.x              | >= 1016.x.x | 1.x.x                         |  
 
 
-![Device_Details](https://user-images.githubusercontent.com/99970126/230736004-0fc9eb67-aa58-40e8-a32b-8ae2dd11faa7.PNG)
+![Device_Details](images/Device-details.PNG)
 
-![Device-Details-Config](https://user-images.githubusercontent.com/99970126/188394087-58a3da72-1ae3-4812-8aef-a6afe3a64c9a.png)
+![Device-Details-Config](images/Device-Details-config.PNG)
 
 
 ## Features
@@ -25,7 +25,7 @@ The Device Details Widget Plugin is the Cumulocity module federation plugin crea
 ## Installation
 ### Runtime Widget Deployment?
 
- * This plugin support runtime deployment. Download  [Runtime Binary](https://github.com/SoftwareAG/cumulocity-device-details-widget-plugin/releases/download/1.0.1/sag-ps-pkg-device-details-widget-1.0.1.zip)  and install via Administrations --> Ecosystems --> Applications --> Packages.
+ * This plugin support runtime deployment. Download  [Runtime Binary](https://github.com/SoftwareAG/cumulocity-device-details-widget-plugin/releases/download/1.0.2/sag-ps-pkg-device-details-widget-1.0.2.zip)  and install via Administrations --> Ecosystems --> Applications --> Packages.
 
 ## QuickStart
 
