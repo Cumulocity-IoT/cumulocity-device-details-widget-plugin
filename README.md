@@ -9,9 +9,9 @@ The Device Details Widget Plugin is the Cumulocity module federation plugin crea
 | 2.0.x              | >= 1016.x.x | 1.x.x                         |  
 
 
-![Device_Details](Images/Device-details.PNG)
+![Device_Details](https://user-images.githubusercontent.com/99970126/230736004-0fc9eb67-aa58-40e8-a32b-8ae2dd11faa7.PNG)
 
-![Device-Details-Config](Images/Device-Details-config.PNG)
+![Device-Details-Config](https://user-images.githubusercontent.com/99970126/188394087-58a3da72-1ae3-4812-8aef-a6afe3a64c9a.png)
 
 
 ## Features

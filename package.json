@@ -86,21 +86,7 @@
         "widget-plugin": [
           "GpDeviceDetailsWidgetModule"
         ]
-      },
-      "copy": [
-        {
-          "from": "Images/Device-details.PNG",
-          "to": "Images/Device-details.PNG"
-        },
-        {
-          "from": "Images/Device-Details-config.PNG",
-          "to": "Images/Device-Details-config.PNG"
-        },
-        {
-          "from": "LICENSE",
-          "to": "LICENSE.txt"
-        }
-      ]
+      }
     },
     "cli": {}
   },
