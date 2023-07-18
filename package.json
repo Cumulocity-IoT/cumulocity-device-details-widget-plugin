@@ -89,12 +89,12 @@
       },
       "copy": [
         {
-          "from": "images/Device-details.PNG",
-          "to": "images/Device-details.PNG"
+          "from": "images/device-details.png",
+          "to": "images/device-details.png"
         },
         {
-          "from": "images/Device-Details-config.PNG",
-          "to": "images/Device-Details-config.PNG"
+          "from": "images/device-details-config.png",
+          "to": "images/device-details-config.png"
         },
         {
           "from": "LICENSE",
